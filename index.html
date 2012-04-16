@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>chris marra</title>
+		<!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<!-- Some Open Web/SEO stuff -->
+		<link rel="canonical" href="http://chrismarra.com" />
+		<link rel="me" type="text/html" href="https://plus.google.com/116412425491631154881" />
+		<link rel="me" type="text/html" href="https://twitter.com/chrismarra" />
+		<link rel="me" type="text/html" href="https://facebook.com/chrismarra" />
+		<meta name="author" 			content="Chris Marra">
+		<meta property="og:image" 		content="http://chrismarra.com/me.s.jpg" />
+		<meta property="og:title"		content="Chris Marra.com" />
+		<meta property="og:type"		content="profile"> 
+		<meta property="og:url"			content="http://chrismarra.com">
+		<meta property="og:description"	content="Chris Marra - on the internet since 1996.">
+		<meta name="description" 		content="Chris Marra - on the internet since 1996.">
+		<meta property="profile:first_name"		content="Chris">
+		<meta property="profile:last_name"		content="Marra">
+		<meta property="profile:username"		content="chrismarra">
+		<meta property="fb:profile_id"			content="1086840024">
+
+		<!-- Get some free stuff from Google -->
+		<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css' />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+		
+		<!-- Load in a bunch of CSS -->
+		<!-- Inuit has been great. http://csswizardry.com/inuitcss/ -->
+		<link rel="stylesheet" type="text/css" href="inuit.css" />
+		<link rel="stylesheet" type="text/css" href="grid.inuit.css" />
+		<link rel="stylesheet" type="text/css" href="dropshadows.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<!-- Implement the sticky menu -->
+		<!-- http://code.google.com/p/sticky-panel/ -->
+		<script src="jquery.stickyPanel.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+	        $().ready(function () {
+	            var stickyPanelOptions = {topPadding: -30, afterDetachCSSClass: "",savePanelSpace: true};
+	            $("#header").stickyPanel(stickyPanelOptions);
+	        });
+		</script>
+	    
+		<!-- Implement the smooth scrolling -->
+		<!-- http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links -->
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top-180}, 500);
+				});
+			});
+		</script>		
+		  
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-2842466-1']);
+		  _gaq.push(['_trackPageview']);
+	
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+		
+		<!-- Some custom JS -->
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {						
+			    $(document).ready(function() {resizeFrame();});
+			    $(window).load(function() {resizeFrame();});
+			    $(window).resize(function() {resizeFrame();});
+			    
+		        function resizeFrame()  {
+					var height = $(window).height();
+			        var adjust = $("#header").height() + $("#contactdiv").height();
+			        $("#contactdiv").css('margin-bottom', height - adjust + "px");
+			        }
+
+				//Expanding projects code isn't quite ready for prod
+				/*$( ".project" ).click(function() {
+					$(this).toggleClass( "selectedproject", 0 );
+					return false;
+				});*/
+
+				
+			});
+		</script>
+	    
+	</head>
+
+	<body class="wrapper">
+		
+		<div id="top" style="margin-bottom:200px;"></div>
+		<div class="header drop-shadow curved curved-hz-1" id="header">
+			<a href="#top" id="top"><h1>chris marra</h1></a>
+			
+			<div class="nav">
+				<ul>
+					<li><a href="#about" class="scroll">about</a></li>
+					<li><a href="#projects" class="scroll">projects</a></li>
+					<li><a href="#resume" class="scroll">resume</a></li>
+					<li><a href="#contact" class="scroll">contact</a></li>
+				</ul>
+			</div>
+		</div>
+	
+		<div id="contents">
+				
+		<div class="grids">
+			<a id="about"></a>
+			<div class="grid-5">
+				<h2>who?</h2>
+				<p>Hey there, I'm Chris. Instead of writing a few paragraphs about myself, these are some things we could talk about if we ever meet. What's your list look like?
+				<ul>
+					<li><a href="http://www.olin.edu">Olin Col­lege</a></li>
+					<li>Robots</li>
+					<li>Being an <abbr title="Resident Resource - Olin's own spin on RAs">R2 @ Olin</abbr></li>
+					<li><abbr title="For Inspiration and Recognition of Science and Technology">FIRST Robotics</abbr> & <a href="http://thebluealliance.net">The Blue Alliance</a></li>
+					<li>How I Met Your Mother</li>
+					<li>Defunct Amusement Parks</li>
+					<li>Subway Systems</li>
+				</ul></p>
+				<!--<p>Hey there, I’m Chris Marra. I’m an <abbr title="Engineering with a concentration in Robotics">Engi­neer­ing: Robot­ics</abbr> major at <a href="http://www.olin.edu">Olin Col­lege</a>. I really like cre­at­ing soft­ware, build­ing robots, and help­ing peo­ple — at Olin I am an <abbr title="Resident Resource - like an RA but without the discipline functions">R2</abbr>, have been in stu­dent gov­ern­ment all three years here, and led our con­sti­tu­tional review and rewrite process. I did  Robot­ics in high school — which is what got me into engi­neer­ing — and still co-run  with my brother. </p>
+				<p>I am deeply excited by the fact we can now access the same infor­ma­tion from tons of dif­fer­ent con­nected devices, and the ensu­ing impli­ca­tions. I’ve got no idea where tech­nol­ogy is headed but I want to be involved in shap­ing how it rede­fines the ways we con­sume and com­mu­ni­cate infor­ma­tion. Robot­ics is a lot of fun to study, use, and see your cre­ations of in action, but right now soft­ware is what truly excites me going forward.</p>-->
+			</div>
+
+			<div class="grid-5">
+				<img src="me.s.jpg" id="me" />
+			</div>
+		</div>
+		
+		<div class="grids">
+			<a id="projects"></a>
+			<div class="grid-10">
+				<h2>projects</h2>
+				<p>I've had a really cool project-based education at Olin. These are some of the particularly cool things I've worked on, both in and out of class. Projects with »'s listed have external links.</p>
+								
+			</div>
+			
+			<div class="grid-10" style="margin-left:32px; margin-right:32px;">
+
+				<div class="project">
+				<h3><a href="http://bit.ly/99luftballons">Facebook Privacy Interactions »</a></h3>
+				<h4>Human Factors and Interface Design, Fall 2010</h4>
+				<p>My project team decided to look at privacy interactions on Facebook for our semester's project. Through ethnographic research, prototyping, and user testing, we produced a non-functional prototype of redesigned Facebook privacy settings interactions. Go check out the prototype!</p>
+				</div>
+
+				<div class="project">
+				<h3><a href="http://thebluealliance.com">The Blue Alliance »</a></h3>
+				<h4>FIRST Robotics, 2007-Present</h4>
+				<p>In 2007 I co-founded The Blue Alliance with my brother, a website for archiving videos from the FIRST robotics competition. It sees about 350,000 visits per year, and has had over 600,000 unique visitors since launch.</p>
+				</div>
+								
+				<div class="project">
+				<h3>aboutFace Clocks</h3>
+				<h4>Real Products, Real Markets, Spring 2011</h4>
+				<p>As an introductory class project in product design and entrepreneurship I worked on a team that developed a concept and brand for a task-based clock where users place iconographic magnets around it to represent events. We prototyped, manufactured, and sold clocks in a half-semester.</p>
+				</div>
+				
+				<div class="project">
+				<h3><a href="http://executeables.com">exeCUTEables »</a></h3>
+				<h4>Real Products, Real Markets, Spring 2011</h4>
+				<p>For a final project I developed a concept for a line of "geek chic" jewelry. I prototyped and set up manufacturing for a dozen designs in both copper and steel and launched an online store. After making sales for class, I put the project on hold, but am keeping the brand around for the future.</p>
+				</div>
+				
+				<div class="project">
+				<h3>Robotics Projects</h3>
+				<h4>Olin College, 2010-present</h4>
+				<p>Designed 3D printed components to convert an RC car into an autonomous boat and wrote machine vision code to guide it through a race. Separately worked on a team that weatherproofed an existing vehicle for research, converted it to a real-time FPGA-based control system, tested a pre-production 2D <abbr title="Light Detection And Ranging">LIDAR</abbr> sensor, and prototyped a neuro-inspired software architecture.</p>
+				</div>
+				
+				<div class="project">
+				<h3>XKCD Auto-Generator</h3>
+				<h4>Software Engineering, Spring 2011</h4>
+				<p>For a final project in software engineering I worked with two others to create a web app that generates pseudo-random XKCD comics using Markov chain text analysis in Java. Using a custom MapReduce infrastructure it fetches and analyzes new comic texts, and generates final images using HTML Canvases. Deployed on Google App Engine, but removed it after pricing changes.</p>
+				</div>
+
+				<div class="project">
+				<h3>Constitutional Rewrite</h3>
+				<h4>Olin Student Government, 2009-2010</h4>
+				<p>In 2009 I proposed an amendment to the Olin College constitution which deleted the entirety of its text and mandated a rewrite within the year to better serve current students. A small group of us worked all year, prototyping structural changes and seeking student feedback. The resulting Constitution was approved, and more importantly, managed to finally be shorter than the US Constitution.</p>
+				</div>
+								
+								
+				<div class="project">
+				<h3>Rapid Prototyping Projects</h3>
+				<h4>Mechanical Prototyping, Spring 2010</h4>
+				<p>Worked on three teams over the course of the semester to learn rapid prototyping techniques in manufacturing. Over four week sprints, we created a motorized model of an eel out of sheet metal, a motorized and 3-D printed sea turtle, and a miniature high-precision clockcage-style transmission.</p>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="grids">
+			<a id="resume"></a>
+			<div class="grid-10">
+				<h2>resume</h2>
+				<p>I’ve got <a href="cmarra-resume.pdf" target="_blank" type="application/pdf">a resume</a>. That's a fairly up-to-date copy of it.</p>
+				
+			</div>
+		</div>
+		
+		<div class="grids" id="contactdiv">
+			<a id="contact"></a>
+			<div class="grid-10">
+				<h2>contact</h2>
+				<p>The best way to get in touch with me is through email. You can also find me a variety of various social networks, though. I can be reached via <a href="mailto:chris.marra@gmail.com" title="Shoot me a message!">chris.marra@gmail.com</a>.</p>
+				<p>
+					<a href="https://facebook.com/chrismarra">facebook</a> | 
+					<a href="https://twitter.com/chrismarra">twitter</a> | 
+					<a href="https://plus.google.com/116412425491631154881">google+</a>
+				</p>
+			</div>
+		</div>
+		
+		</div>
+		
+	</body>
+	
+</html>

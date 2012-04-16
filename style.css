@@ -1,0 +1,137 @@
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
+
+h1 {
+	font-family: Muli, sans-serif;
+	color: black;
+	letter-spacing: -0.05em;
+	text-align: center;
+	font-size: 8em;
+	cursor: default;
+}
+
+.header a:hover {
+	text-decoration: none;
+}
+
+.header a {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 1.75em;
+	margin-bottom: .5em;
+	color:black;
+}
+
+.nav {
+	height: 3em;
+	margin-left: auto;
+	margin-bottom: 0em;
+	margin-right: auto;
+	margin-top: -5em;
+	padding-right: 1em;
+	padding-left: 1em;
+	text-align: center;
+	color: white;
+	background-color: black;
+	border:none;
+	z-index: 20;
+}
+
+.nav li {
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 3em;
+	height: 3em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+abbr {
+	border-bottom: dotted gray 1px;
+}
+
+.nav a {
+	font-size: 1.5em;
+	line-height: 3em;
+	vertical-align: top;
+	padding-top: .375em;
+	line-height: normal;
+	color: white;
+}
+
+.nav a:hover {
+	border-bottom: solid white .375em;
+	text-decoration: none;
+}
+
+body {
+	font-family: Muli, sans-serif;
+}
+
+.project {
+	padding:10px;
+	margin-bottom: 2px;
+	width: 338px;
+	min-height: 180px;
+	float:left;
+}
+
+h3 a {
+	color: #333;
+}
+
+.project h3,h4 { 
+	margin:0;
+	padding:0;
+}
+
+.project h3 {
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+.project h4 {
+	font-weight: lighter;
+	font-size: .9em;
+	color:gray;
+}
+
+.project p {
+	font-size: .9em;
+}
+
+/*.project:hover {
+	background-image: url("http://images-1.findicons.com/files/icons/1667/iconic/32/fullscreen_alt.png");
+	background-position: top right;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-size: 1em;
+	cursor: pointer;
+	border-radius: 0.6em;
+	box-shadow: 0px 0px .3em grey;
+}
+
+.selectedproject {
+	width: 716px;
+	height: 360px;
+	z-index: 2;
+	position:absolute;
+	background-color: white;
+}*/
+
+.header {
+	background-color: white;
+	width:48.75em;
+	margin-top: -2em;
+	margin-bottom: 4em;
+}
+
+.grids {
+	margin-bottom: 1em;
+}
+
+p {
+	margin-bottom: .7em;
+}
