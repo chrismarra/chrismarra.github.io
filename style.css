@@ -1,13 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Muli);
-
+@import url(http://fonts.googleapis.com/css?family=Muli:400,400italic|Maven+Pro);
 
 h1 {
-	font-family: Muli, sans-serif;
 	color: black;
 	letter-spacing: -0.05em;
 	text-align: center;
-	font-size: 8em;
+	font-size: 100pt;
 	cursor: default;
+	font-weight: lighter;
+	font-family: Tahoma, "Maven Pro", sans-serif;
 }
 
 .header a:hover {
@@ -27,7 +27,7 @@ h2 {
 .nav {
 	height: 3em;
 	margin-left: auto;
-	margin-bottom: 0em;
+	margin-bottom: 0;
 	margin-right: auto;
 	margin-top: -5em;
 	padding-right: 1em;
@@ -37,6 +37,7 @@ h2 {
 	background-color: black;
 	border:none;
 	z-index: 20;
+	box-shadow: 0 -5px 100px -15px #000;
 }
 
 .nav li {
@@ -67,7 +68,7 @@ abbr {
 }
 
 body {
-	font-family: Muli, sans-serif;
+	font-family: "Muli", sans-serif;
 }
 
 .project {
