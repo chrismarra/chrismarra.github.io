@@ -1,0 +1,89 @@
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: 12pt;
+}
+
+h1 {
+	color: black;
+	letter-spacing: -0.05em;
+	font-size: 42pt;
+	cursor: default;
+	font-weight: lighter;
+	font-family: Tahoma, sans-serif;
+
+}
+
+.header a:hover, .header a {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 28pt;
+	margin-bottom: .5em;
+	color: black;
+}
+
+.nav {
+	/*margin-left: .5em;
+	margin-right: .5em;*/
+	width:100%;
+	margin: 0;
+	text-align: left;
+	color: white;
+	background-color: black;
+	border:none;
+	z-index: 20;
+}
+
+.nav li {
+	vertical-align: middle;
+	font-size: 18pt;
+	display: block;
+}
+
+.nav li a {
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	padding-left: .5em;
+	width: 100%;
+}
+
+.nav ul {
+	margin-left: .25em;
+}
+
+.project h3 {
+	font-weight: bolder;
+	font-size: 110%;
+	margin-bottom: .2em;
+}
+
+.project h4 {
+	font-weight: lighter;
+	font-size: 90%;
+	color: gray;
+	margin-bottom: 1em;
+}
+
+#me {
+	text-align: center;
+	margin-bottom: 1.5em;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+h3 a {
+	color: #333;
+}
+
+abbr {
+	border-bottom: dotted gray 1px;
+}
